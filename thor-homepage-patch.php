@@ -1,6 +1,12 @@
 <?php
 /*
 Plugin Name: Thor Home Patch
+Plugin URI: https://getphound.com
+Description: This plugin adds the homepage functionality to themes older than version 3.0
+Version: 1.0
+Author: Ryan Rudolph
+License: GPL-2.0+
+License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 */
 
 function thor_add_functions() {
