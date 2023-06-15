@@ -50,7 +50,7 @@ function thor_add_functions() {
     }
     
     function add_plugin_setup_page() {
-        add_menu_page( 'Home Page Setup', 'Plugin Setup', 'manage_options', 'plugin-setup', 'display_plugin_setup_page' );
+        add_menu_page( 'Update Home Page', 'Update Home Page', 'manage_options', 'plugin-setup', 'display_plugin_setup_page' );
     }
     
     add_action( 'admin_menu', 'add_plugin_setup_page' );
