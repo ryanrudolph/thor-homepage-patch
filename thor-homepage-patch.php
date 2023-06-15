@@ -25,8 +25,8 @@ function thor_add_functions() {
     
     // Add CSS
     function enqueue_custom_home_scripts() {
-        wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/home.css', array(), '1.0', 'all' );
-        wp_enqueue_script( 'gp-accordion', get_stylesheet_directory_uri() . '/gp-accordion.js', '1.0.0', );
+        wp_enqueue_style( 'custom-style', plugin_dir_url(__FILE__) . '/home.css', array(), '1.0', 'all' );
+        wp_enqueue_script( 'gp-accordion', plugin_dir_url(__FILE__) . '/gp-accordion.js', '1.0.0', );
     }
     add_action( 'wp_enqueue_scripts', 'enqueue_custom_home_scripts' );    
 
