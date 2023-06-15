@@ -25,12 +25,12 @@ function thor_add_functions() {
     add_action( 'wp_enqueue_scripts', 'enqueue_custom_home_scripts' );    
 
     // Add theme functions CSS
-    add_action( 'wp_head', 'thor_customize_css' );
+    add_action( 'wp_head', 'thor_customize_home_css' );
     /*
      * Output custom colors from the customizer
      *
      */
-    function thor_customize_css() {
+    function thor_customize_home_css() {
         ?>
              <style type="text/css">
                  .accordion-toggle, .home .section-1 .button { background: <?php echo get_theme_mod( 'thor_primary_color', '#333333' ); ?> -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1))); }
